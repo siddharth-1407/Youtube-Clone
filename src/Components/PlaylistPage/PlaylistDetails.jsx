@@ -5,7 +5,7 @@ import { Context } from '../../context/ContextApi';
 import { fetchData } from '../../Utils/api';
 import NoConnection from '../NoConnection/NoConnection';
 const PlaylistVideo = lazy(() => import('./PlaylistVideo'));
-const Sidebar = lazy(() => import('../Sidebars/sidebar'));
+const Sidebar = lazy(() => import('../Sidebars/Sidebar'));
 
 const PlaylistDetails = () => {
 	const { id } = useParams();
