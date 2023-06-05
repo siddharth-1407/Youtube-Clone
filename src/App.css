@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	/* border: 1px solid red !important; */
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+button,
+input,
+select {
+	margin: 0;
+}
+
+img,
+video {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+iframe {
+	border: 0;
+	aspect-ratio: 16/9;
+	outline: none;
+}
+iframe:focus {
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+.header__left {
+	display: flex;
+	align-items: center;
+}
+
+.line-clamp {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.video-card {
+	display: grid;
+	/* gap: 1rem; */
+	grid-template-columns: repeat(auto-fit, minmax(22.479rem, 1fr));
+}
+.custome-height {
+	min-height: calc(100vh - 56px);
+}
+
+.skeleton {
+	opacity: 0.7;
+	animation: skeleton-loading 1s linear infinite alternate;
+}
+.skeleton-text {
+	width: 100%;
+	height: 0.5em;
+	margin-bottom: 0.5em;
+	border-radius: 0.125em;
+}
+.skeleton-text:last-child {
+	margin: 0;
+	width: 80%;
+}
+@keyframes skeleton-loading {
+	0% {
+		background-color: hsl(200, 20%, 70%);
+	}
+	100% {
+		background-color: hsl(200, 20%, 95%);
+	}
+}
+
+.line-clamp-custom {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.line-clamp-7 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+}
+.bg-fade {
+	position: fixed;
+	overflow-y: scroll;
+}
+.bg-fade:after {
+	content: '';
+	position: absolute;
+	overflow: hidden;
+	inset: 0;
+	z-index: 40;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mouseUpDark {
+	animation: blinkDark 400ms ease-out 1;
+}
+@keyframes blinkDark {
+	0% {
+		border-color: rgba(255, 255, 255, 0.5);
+		background-color: #272727;
+	}
+	50% {
+		background-color: transparent;
+		background-color: #272727;
+	}
+	100% {
+		border-color: transparent;
+		background-color: #272727;
+	}
+}
+.mouseUp {
+	animation: blink 400ms ease-out 1;
+}
+
+@keyframes blink {
+	0% {
+		border-color: #cccccc;
+		background-color: #e3e3e3;
+	}
+	50% {
+		background-color: transparent;
+	}
+	100% {
+		border-color: transparent;
+		background-color: transparent;
+	}
+}
+
+.mouseUpAction-BtnDark {
+	animation: blinkActionDark 400ms ease-out 1;
+}
+@keyframes blinkActionDark {
+	0% {
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+
+	100% {
+		border-color: transparent;
+	}
+}
+.mouseUpAction-Btn {
+	animation: blinkAction 400ms ease-out 1;
+}
+@keyframes blinkAction {
+	0% {
+		border-color: #cccccc;
+		/* background-color: #e3e3e3; */
+	}
+
+	100% {
+		border-color: transparent;
+		/* background-color: transparent; */
+	}
+}
+.box-shadow-custom {
+	box-shadow: 0px 0px 3.4px rgba(0, 0, 0, 0.061), 0px 0px 11.4px rgba(0, 0, 0, 0.089), 0px 0px 51px rgba(0, 0, 0, 0.15);
+}
+
+.searchSuggestions {
+	box-shadow: 0 1px 0.5px 0px rgba(0, 0, 0, 0.8), -1.5px 0.3px 0px rgba(0, 0, 0, 0.5), 1.5px 0.3px 0px rgba(0, 0, 0, 0.5),
+		0px 0.2px 0.2px -5px rgba(0, 0, 0, 0.053), 0px 0.5px 0.4px -5px rgba(0, 0, 0, 0.077), 0px 0.9px 0.7px -5px rgba(0, 0, 0, 0.094),
+		0px 1.4px 1.1px -5px rgba(0, 0, 0, 0.11), 0px 2.1px 1.7px -5px rgba(0, 0, 0, 0.126), 0px 3.3px 2.7px -5px rgba(0, 0, 0, 0.143),
+		0px 5.5px 4.5px -5px rgba(0, 0, 0, 0.167), 0px 11px 9px -5px rgba(0, 0, 0, 0.22);
+}

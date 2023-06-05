@@ -1,0 +1,23 @@
+@supports (scrollbar-color: transparent #717171) {
+	.sidebar {
+		scrollbar-color: #717171 transparent;
+		scrollbar-width: thin;
+	}
+	.dark {
+		scrollbar-color: #717171 #181818;
+	}
+}
+.sidebar::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #181818;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #717171;
+	border-radius: 50px;
+}
