@@ -1,0 +1,1 @@
+import{r as e}from"./index-4483838d.js";const o=t=>e.createElement("svg",{width:24,height:24,viewBox:"0 0 24 24",fill:"none",xmlns:"http://www.w3.org/2000/svg",...t},e.createElement("path",{d:"M21 6H3V5H21V6ZM21 11H3V12H21V11ZM21 17H3V18H21V17Z"}));export{o as S};
