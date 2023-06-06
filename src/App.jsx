@@ -115,7 +115,7 @@ function App() {
 							<Routes>
 								<Route
 									exact
-									path='/Youtube-Clone'
+									path='/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<Feed />
