@@ -213,7 +213,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/fashion&beauty/'
+									path='/Youtube-Clone/fashion&beauty/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryFashion />
@@ -222,7 +222,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/gaming/'
+									path='/Youtube-Clone/gaming/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryGaming />
@@ -231,7 +231,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/learning/'
+									path='/Youtube-Clone/learning/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryLearning />
@@ -240,7 +240,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/movies/'
+									path='/Youtube-Clone/movies/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMovies />
@@ -249,7 +249,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/#/music/'
+									path='/Youtube-Clone/music/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMusic />
@@ -258,7 +258,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/news/'
+									path='/Youtube-Clone/news/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryNews />
@@ -267,7 +267,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/sports/'
+									path='/Youtube-Clone/sports/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategorySports />
