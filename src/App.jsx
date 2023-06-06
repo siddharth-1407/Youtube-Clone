@@ -204,7 +204,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/library/'
+									path='/library/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<Library />
@@ -213,7 +213,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/fashion&beauty/'
+									path='/fashion&beauty/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryFashion />
@@ -222,7 +222,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/gaming/'
+									path='/gaming/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryGaming />
@@ -231,7 +231,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/learning/'
+									path='/learning/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryLearning />
@@ -240,7 +240,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/movies/'
+									path='/movies/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMovies />
@@ -249,7 +249,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/music/'
+									path='/music/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMusic />
@@ -258,7 +258,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/news/'
+									path='/news/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryNews />
@@ -267,7 +267,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/sports/'
+									path='/sports/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategorySports />
@@ -276,7 +276,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/trending/'
+									path='/trending/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryTrending />
