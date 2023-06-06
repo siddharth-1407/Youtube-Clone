@@ -249,7 +249,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/music/'
+									path='/#/music/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMusic />
