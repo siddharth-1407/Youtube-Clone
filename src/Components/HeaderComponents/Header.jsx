@@ -24,7 +24,7 @@ const Header = () => {
 	useEffect(() => {}, [user]);
 
 	useEffect(() => {
-		if (pathname === '/rateLimited') {
+		if (pathname === '/Youtube-Clone/rateLimited') {
 			setRateLimited(true);
 		} else {
 			setRateLimited(false);
@@ -64,7 +64,7 @@ const Header = () => {
 		if (search === '') {
 			return;
 		} else {
-			navigate(`/results/query/${search}`);
+			navigate(`/Youtube-Clone/results/query/${search}`);
 		}
 	};
 	const closeSearchSuggestions = (e) => {
@@ -110,7 +110,7 @@ const Header = () => {
 						<Menu className='fill-[#030303] dark:fill-white pointer-events-none' />
 					</button>
 				)}
-				<Link to='/' className='flex items-end gap-1 pr-[.85rem] relative'>
+				<Link to='/Youtube-Clone/' className='flex items-end gap-1 pr-[.85rem] relative'>
 					<Logo
 						className=' fill-[#212121] dark:fill-white '
 						onClick={() => {
@@ -182,30 +182,7 @@ const Header = () => {
 					</div>
 				</div>
 			)}
-			<div className='signinBtn'>
-				{user ? <HeaderRightUser /> : <HeaderRightNoUser />}
-
-				{/* {!user ? (
-					
-				) : (
-					<button
-						onClick={() => {
-							localStorage.clear();
-							setUser(false);
-							signOut();
-						}}>
-						<div className='flex gap-2 px-3 py-[.35rem] text-[#3ea6ff] border-[1px] border-[#3f3f3f] rounded-full'>
-							<span className='flex items-center '>
-								<AccountCircleOutlinedIcon />
-							</span>
-							<span>Logout</span>
-						</div>
-					</button>
-				)} */}
-			</div>
-			{/* {localStorage.getItem('user') && (
-				
-			)} */}
+			<div className='signinBtn'>{user ? <HeaderRightUser /> : <HeaderRightNoUser />}</div>
 		</div>
 	);
 };
