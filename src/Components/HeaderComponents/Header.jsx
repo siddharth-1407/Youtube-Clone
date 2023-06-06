@@ -24,7 +24,7 @@ const Header = () => {
 	useEffect(() => {}, [user]);
 
 	useEffect(() => {
-		if (pathname === '/Youtube-Clone/rateLimited') {
+		if (pathname === '/rateLimited') {
 			setRateLimited(true);
 		} else {
 			setRateLimited(false);
@@ -64,7 +64,7 @@ const Header = () => {
 		if (search === '') {
 			return;
 		} else {
-			navigate(`/Youtube-Clone/results/query/${search}`);
+			navigate(`/results/query/${search}`);
 		}
 	};
 	const closeSearchSuggestions = (e) => {
@@ -170,7 +170,7 @@ const Header = () => {
 								return (
 									<li key={index}>
 										<Link
-											to={`/Youtube-Clone/results/query/${suggestion}`}
+											to={`/results/query/${suggestion}`}
 											className='flex gap-3 px-2 py-1 font-medium hover:bg-[#e3e3e3] cursor-pointer'>
 											<Search className='fill-[#0f0f0f] scale-[0.85]' />
 											<span>{suggestion}</span>
