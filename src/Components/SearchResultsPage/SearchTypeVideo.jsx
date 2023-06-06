@@ -132,7 +132,7 @@ const SearchTypeVideo = ({ video }) => {
 				</div>
 
 				<div className=' flex fle-col text-[#606060] dark:text-[#aaaaaa] text-[0.8rem]  '>
-					<Link to={`/${video?.snippet?.channelId}`} className='flex items-center min-w-min gap-2'>
+					<Link to={`/channels/${video?.snippet?.channelId}`} className='flex items-center min-w-min gap-2'>
 						<div className='w-[30px] h-[30px] rounded-full overflow-hidden bg-[#e5e5e5] dark:bg-[#272727]'>
 							<img
 								loading='lazy'
