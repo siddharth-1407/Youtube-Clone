@@ -13,19 +13,19 @@ const NoUserTempate = ({ page }) => {
 
 	const getPageInfo = () => {
 		switch (page) {
-			case '/#/Youtube-Clone/history':
+			case '/Youtube-Clone/history':
 				pageinfo = '/history';
 				break;
-			case '/#/Youtube-Clone/subscriptions':
+			case '/Youtube-Clone/subscriptions':
 				pageinfo = '/subscriptions';
 				break;
-			case '/#/Youtube-Clone/library':
+			case '/Youtube-Clone/library':
 				pageinfo = '/library';
 				break;
-			case '/#/Youtube-Clone/watchlater':
+			case '/Youtube-Clone/watchlater':
 				pageinfo = '/watchLater';
 				break;
-			case '/#/Youtube-Clone/likedvideos':
+			case '/Youtube-Clone/likedvideos':
 				pageinfo = '/likedVideos';
 				break;
 
