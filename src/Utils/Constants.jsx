@@ -36,56 +36,56 @@ export const videoCategories = [
 		icon: <Trending className='  dark:fill-white  fill-black' />,
 		iconActive: <TrendingActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/trending',
+		url: '/Youtube-Clone/trending',
 	},
 	{
 		name: 'Music',
 		icon: <Music className='  dark:fill-white  fill-black' />,
 		iconActive: <MusicActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/music',
+		url: '/Youtube-Clone/music',
 	},
 	// {
 	// 	name: 'Movies',
 	// 	icon: <Movies className='  dark:fill-white  fill-black' />,
 	// 	iconActive: <MoviesActive className='  dark:fill-white  fill-black' />,
 	// 	type: 'category',
-	// 	url: '/movies',
+	// 	url:'/Youtube-Clone/movies',
 	// },
 	// {
 	// 	name: 'Live',
 	// 	icon: <Live className='  dark:fill-white  fill-black' />,
 	// 	iconActive: <LiveActive className='  dark:fill-white  fill-black' />,
 	// 	type: 'category',
-	// 	url: '/live',
+	// 	url:'/Youtube-Clone/live',
 	// },
 	{
 		name: 'Gaming',
 		icon: <Gaming className='  dark:fill-white  fill-black' />,
 		iconActive: <GamingActive className='  dark:fill-white  fill-black ' />,
 		type: 'category',
-		url: '/gaming',
+		url: '/Youtube-Clone/gaming',
 	},
 	{
 		name: 'News',
 		icon: <News className='  dark:fill-white  fill-black' />,
 		iconActive: <NewsActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/news',
+		url: '/Youtube-Clone/news',
 	},
 	{
 		name: 'Sports',
 		icon: <Sports className='  dark:fill-white  fill-black' />,
 		iconActive: <SportsActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/sports',
+		url: '/Youtube-Clone/sports',
 	},
 	{
 		name: 'Learning',
 		icon: <Learning className='  dark:fill-white  fill-black' />,
 		iconActive: <LearningActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/learning',
+		url: '/Youtube-Clone/learning',
 	},
 	{
 		name: 'Fashion & Beauty',
@@ -93,7 +93,7 @@ export const videoCategories = [
 		iconActive: <FashionActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/fashion&beauty',
+		url: '/Youtube-Clone/fashion&beauty',
 	},
 ];
 export const CategoriesTop = [
@@ -102,7 +102,7 @@ export const CategoriesTop = [
 		icon: <Home className='  dark:fill-white  fill-black' />,
 		iconActive: <HomeActive className='  dark:fill-white  fill-black' />,
 		type: 'home',
-		url: '/',
+		url: '/Youtube-Clone/',
 	},
 
 	{
@@ -111,21 +111,21 @@ export const CategoriesTop = [
 		iconActive: <SubscriptionsActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/subscriptions',
+		url: '/Youtube-Clone/subscriptions',
 	},
 	{
 		name: 'Library',
 		icon: <Library className='  dark:fill-white  fill-black' />,
 		iconActive: <LibraryActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/library',
+		url: '/Youtube-Clone/library',
 	},
 	{
 		name: 'History',
 		icon: <History className='  dark:fill-white  fill-black' />,
 		iconActive: <HistoryActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/history',
+		url: '/Youtube-Clone/history',
 	},
 
 	{
@@ -133,7 +133,7 @@ export const CategoriesTop = [
 		icon: <Watchlater className='  dark:fill-white  fill-black' />,
 		iconActive: <WatchlaterActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/watchlater',
+		url: '/Youtube-Clone/watchlater',
 		auth: true,
 	},
 	{
@@ -142,7 +142,7 @@ export const CategoriesTop = [
 		iconActive: <MylikesActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/likedvideos',
+		url: '/Youtube-Clone/likedvideos',
 		auth: true,
 	},
 ];
@@ -153,7 +153,7 @@ export const CategoriesTop = [
 // 		iconActive: <YouTubeIcon className='text-[#ff0000] ' />,
 // 		type: 'category',
 // 		divider: true,
-// 		url: '/premium',
+// 		url:'/Youtube-Clone/premium',
 // 	},
 // ];
 
@@ -163,7 +163,7 @@ export const categoriesClosed = [
 		icon: <Home className='  dark:fill-white  fill-black' />,
 		iconActive: <HomeActive className='  dark:fill-white  fill-black' />,
 		type: 'home',
-		url: '/',
+		url: '/Youtube-Clone/',
 	},
 	{
 		name: 'Subscriptions',
@@ -171,13 +171,13 @@ export const categoriesClosed = [
 		iconActive: <SubscriptionsActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/subscriptions',
+		url: '/Youtube-Clone/subscriptions',
 	},
 	{
 		name: 'Library',
 		icon: <Library className='  dark:fill-white  fill-black' />,
 		iconActive: <LibraryActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/library',
+		url: '/Youtube-Clone/library',
 	},
 ];
