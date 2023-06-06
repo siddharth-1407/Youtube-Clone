@@ -1,14 +1,2 @@
-Fetch Channel Playlists :  playlists?part=snippet&part=contentDetails&part=id&part=status&channelId={id}&key=[YOUR_API_KEY]'
-
-By fetching the playlists, we also get the playlist id, which we can use to get the playlist video items from the fetch Playlist item api.
-
-Fetch PLayList Items : playlistItems?part=contentDetails&part=snippet&playlistId={id}&key=[YOUR_API_KEY]' 
-
-we get uploaded video playlist id from channels api, use that as the playlist id to get Channel Videos.
-fetch Channel Videos: playlistItems?part=snippet&playlistId=${id}&key=[YOUR_API_KEY]'
-
-UCPsZ_0SkFdi551iYTG04R2g
-
-Liked videos :- 'playlistItems?part=snippet&part=id&part=contentDetails&playlistId=LL&key='
 
 
