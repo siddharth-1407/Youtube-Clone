@@ -124,7 +124,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/results/query/:searchQuery'
+									path='/Youtube-Clone/results/query/:searchQuery/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<SearchResults />
@@ -133,7 +133,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/video/:id'
+									path='/Youtube-Clone/video/:id/'
 									element={
 										<Suspense fallback={''}>
 											<VideoDetails />
@@ -142,7 +142,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/playlist/:id'
+									path='/Youtube-Clone/playlist/:id/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<PlaylistDetails />
@@ -157,18 +157,18 @@ function App() {
 											<ChannelDetailsWrapper />
 											<Routes>
 												<Route path='/' element={''} />
-												<Route path='/featured' element={''} />
-												<Route path='/videos' element={''} />
-												<Route path='/playlists' element={''} />
-												<Route path='/featuredChannels' element={''} />
-												<Route path='/about' element={''} />
+												<Route path='/featured/' element={''} />
+												<Route path='/videos/' element={''} />
+												<Route path='/playlists/' element={''} />
+												<Route path='/featuredChannels/' element={''} />
+												<Route path='/about/' element={''} />
 											</Routes>
 										</Suspense>
 									}
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/history'
+									path='/Youtube-Clone/history/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<History />
@@ -177,7 +177,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/watchlater'
+									path='/Youtube-Clone/watchlater/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<WatchLater />
@@ -186,7 +186,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/likedvideos'
+									path='/Youtube-Clone/likedvideos/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<LikedVideos />
@@ -195,7 +195,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/subscriptions'
+									path='/Youtube-Clone/subscriptions/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<Subscriptions />
@@ -204,7 +204,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/library'
+									path='/Youtube-Clone/library/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<Library />
@@ -213,7 +213,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/fashion&beauty'
+									path='/Youtube-Clone/fashion&beauty/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryFashion />
@@ -222,7 +222,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/gaming'
+									path='/Youtube-Clone/gaming/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryGaming />
@@ -230,7 +230,8 @@ function App() {
 									}
 								/>
 								<Route
-									path='/Youtube-Clone/learning'
+								exact
+									path='/Youtube-Clone/learning/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryLearning />
@@ -239,7 +240,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/movies'
+									path='/Youtube-Clone/movies/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMovies />
@@ -248,7 +249,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/music'
+									path='/Youtube-Clone/music/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryMusic />
@@ -257,7 +258,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/news'
+									path='/Youtube-Clone/news/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryNews />
@@ -266,7 +267,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/sports'
+									path='/Youtube-Clone/sports/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategorySports />
@@ -275,7 +276,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/trending'
+									path='/Youtube-Clone/trending/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
 											<CategoryTrending />
@@ -285,7 +286,7 @@ function App() {
 
 								<Route
 									exact
-									path='/Youtube-Clone/rateLimited'
+									path='/Youtube-Clone/rateLimited/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<LimitExceded />
