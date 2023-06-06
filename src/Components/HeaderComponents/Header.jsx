@@ -170,7 +170,7 @@ const Header = () => {
 								return (
 									<li key={index}>
 										<Link
-											to={`/results/query/${suggestion}`}
+											to={`/Youtube-Clone/results/query/${suggestion}`}
 											className='flex gap-3 px-2 py-1 font-medium hover:bg-[#e3e3e3] cursor-pointer'>
 											<Search className='fill-[#0f0f0f] scale-[0.85]' />
 											<span>{suggestion}</span>
