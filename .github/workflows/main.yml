@@ -6,7 +6,7 @@ on:
   push:
     branches: ['main']
 env: 
-VITE_APP_YOUTUBE_API_KEY: ${{secrets.YOUTUBE_API_KEY}} 
+VITE_APP_YOUTUBE_API_KEY: ${{secrets.VITE_APP_YOUTUBE_API_KEY}} 
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
