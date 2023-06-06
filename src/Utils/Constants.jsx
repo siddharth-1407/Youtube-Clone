@@ -102,7 +102,7 @@ export const CategoriesTop = [
 		icon: <Home className='  dark:fill-white  fill-black' />,
 		iconActive: <HomeActive className='  dark:fill-white  fill-black' />,
 		type: 'home',
-		url: '/Youtube-Clone/',
+		url: '/',
 	},
 
 	{
@@ -111,21 +111,21 @@ export const CategoriesTop = [
 		iconActive: <SubscriptionsActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/Youtube-Clone/subscriptions/',
+		url: '/subscriptions/',
 	},
 	{
 		name: 'Library',
 		icon: <Library className='  dark:fill-white  fill-black' />,
 		iconActive: <LibraryActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/Youtube-Clone/library/',
+		url: '/library/',
 	},
 	{
 		name: 'History',
 		icon: <History className='  dark:fill-white  fill-black' />,
 		iconActive: <HistoryActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/Youtube-Clone/history/',
+		url: '/history/',
 	},
 
 	{
@@ -133,7 +133,7 @@ export const CategoriesTop = [
 		icon: <Watchlater className='  dark:fill-white  fill-black' />,
 		iconActive: <WatchlaterActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/Youtube-Clone/watchlater/',
+		url: '/watchlater/',
 		auth: true,
 	},
 	{
@@ -142,7 +142,7 @@ export const CategoriesTop = [
 		iconActive: <MylikesActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/Youtube-Clone/likedvideos/',
+		url: '/likedvideos/',
 		auth: true,
 	},
 ];
@@ -164,7 +164,7 @@ export const categoriesClosed = [
 		icon: <Home className='  dark:fill-white  fill-black' />,
 		iconActive: <HomeActive className='  dark:fill-white  fill-black' />,
 		type: 'home',
-		url: '/Youtube-Clone/',
+		url: '/',
 	},
 	{
 		name: 'Subscriptions',
@@ -172,13 +172,13 @@ export const categoriesClosed = [
 		iconActive: <SubscriptionsActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
 		divider: true,
-		url: '/Youtube-Clone/subscriptions/',
+		url: '/subscriptions/',
 	},
 	{
 		name: 'Library',
 		icon: <Library className='  dark:fill-white  fill-black' />,
 		iconActive: <LibraryActive className='  dark:fill-white  fill-black' />,
 		type: 'category',
-		url: '/Youtube-Clone/library/',
+		url: '/library/',
 	},
 ];
