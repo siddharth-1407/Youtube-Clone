@@ -156,12 +156,12 @@ function App() {
 										<Suspense fallback={<div></div>}>
 											<ChannelDetailsWrapper />
 											<Routes>
-												<Route path='/Youtube-Clone/' element={''} />
-												<Route path='/Youtube-Clone/featured' element={''} />
-												<Route path='/Youtube-Clone/videos' element={''} />
-												<Route path='/Youtube-Clone/playlists' element={''} />
-												<Route path='/Youtube-Clone/featuredChannels' element={''} />
-												<Route path='/Youtube-Clone/about' element={''} />
+												<Route path='/' element={''} />
+												<Route path='/featured' element={''} />
+												<Route path='/videos' element={''} />
+												<Route path='/playlists' element={''} />
+												<Route path='/featuredChannels' element={''} />
+												<Route path='/about' element={''} />
 											</Routes>
 										</Suspense>
 									}
