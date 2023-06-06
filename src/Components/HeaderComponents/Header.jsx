@@ -110,7 +110,7 @@ const Header = () => {
 						<Menu className='fill-[#030303] dark:fill-white pointer-events-none' />
 					</button>
 				)}
-				<Link to='/Youtube-Clone/' className='flex items-end gap-1 pr-[.85rem] relative'>
+				<Link to='/' className='flex items-end gap-1 pr-[.85rem] relative'>
 					<Logo
 						className=' fill-[#212121] dark:fill-white '
 						onClick={() => {
