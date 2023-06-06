@@ -124,7 +124,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/results/query/:searchQuery/'
+									path='/results/query/:searchQuery/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<SearchResults />
@@ -133,7 +133,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/video/:id/'
+									path='/video/:id/'
 									element={
 										<Suspense fallback={''}>
 											<VideoDetails />
@@ -142,7 +142,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/playlist/:id/'
+									path='/playlist/:id/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<PlaylistDetails />
@@ -151,7 +151,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/channels/:id/*'
+									path='/channels/:id/*'
 									element={
 										<Suspense fallback={<div></div>}>
 											<ChannelDetailsWrapper />
@@ -168,7 +168,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/history/'
+									path='/history/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<History />
@@ -177,7 +177,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/watchlater/'
+									path='/watchlater/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<WatchLater />
@@ -186,7 +186,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/likedvideos/'
+									path='/likedvideos/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<LikedVideos />
@@ -195,7 +195,7 @@ function App() {
 								/>
 								<Route
 									exact
-									path='/Youtube-Clone/subscriptions/'
+									path='/subscriptions/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<Subscriptions />
@@ -286,7 +286,7 @@ function App() {
 
 								<Route
 									exact
-									path='/Youtube-Clone/rateLimited/'
+									path='/rateLimited/'
 									element={
 										<Suspense fallback={<div></div>}>
 											<LimitExceded />
