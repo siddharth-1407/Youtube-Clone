@@ -12,6 +12,7 @@ const NoUserTempate = ({ page }) => {
 	let pageinfo = '';
 
 	const getPageInfo = () => {
+		console.log(page)
 		switch (page) {
 			case '/Youtube-Clone/history':
 				pageinfo = '/history';
