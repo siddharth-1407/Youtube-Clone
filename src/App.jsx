@@ -2,7 +2,7 @@ import './App.css';
 import './Loader.css';
 import './Scrollbar.css';
 import React, { useState, Suspense, lazy, useContext, useEffect } from 'react';
-import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
+import { Routes, Route, HashRouter, Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 const Header = lazy(() => import('./Components/HeaderComponents/Header'));
@@ -83,7 +83,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div
 				className={`alert | justify-center px-4 py-1 fixed top-0 z-50 w-full bg-[#FF0000] text-white font-semibold ${
 					showAlert ? 'flex' : 'hidden'
@@ -230,7 +230,7 @@ function App() {
 									}
 								/>
 								<Route
-								exact
+									exact
 									path='/Youtube-Clone/learning/'
 									element={
 										<Suspense fallback={<VideoCardSkeletonFallback />}>
@@ -307,7 +307,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
