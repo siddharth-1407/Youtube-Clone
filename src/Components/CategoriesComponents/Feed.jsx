@@ -179,7 +179,7 @@ const Feed = () => {
 								);
 							})
 						) : (
-							navigate('/rateLimited')
+							navigate('/Youtube-Clone/rateLimited')
 						)
 					) : (
 						<Suspense fallback={''}>
