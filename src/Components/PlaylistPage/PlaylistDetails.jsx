@@ -123,14 +123,14 @@ const PlaylistDetails = () => {
 			)}
 
 			{isOnline ? (
-				<div
+				<main
 					className={`main-feed | px-6 ml-0 sm:pr-0 sm:pl-5 sm:mt-6 md:px-6 flex flex-col lg:flex-row  flex-wrap justify-center lg:justify-start  gap-y-7   text-white  ${
 						rateLimited
 							? 'w-screen ml-[0px]'
 							: `${sidebarExpanded ? 'w-full lg:w-[calc(100%-240px)]' : 'w-full sm:w-[calc(100%-50px)] md:w-[calc(100%-69px)]'}`
 					}
                     mx-auto sm:ml-auto sm:mr-0`}>
-					<div className='flex w-full lg:w-[360px]'>
+					<section className='flex w-full lg:w-[360px]'>
 						<div className='playlistHero | relative rounded-[14px] overflow-hidden  w-full p-6 lg:w-[360px] h-60 lg:h-[calc(100%-6rem)] lg:fixed bg-gradient-to-b from-indigo-700 to-transparent '>
 							<div className='container |  flex flex-col gap-4 '>
 								<div className='flex  '>
@@ -162,8 +162,8 @@ const PlaylistDetails = () => {
 								</div>
 							</div>
 						</div>
-					</div>
-					<div className='items | w-full lg:w-[calc(100%-360px)] lg:ml-auto lg:pr-4 lg:pl-2'>
+					</section>
+					<section className='items | w-full lg:w-[calc(100%-360px)] lg:ml-auto lg:pr-4 lg:pl-2'>
 						{!rateLimited
 							? playlistItems.map((item, index) => {
 									return (
@@ -175,8 +175,8 @@ const PlaylistDetails = () => {
 									);
 							  })
 							: navigate('/rateLimited')}
-					</div>
-				</div>
+					</section>
+				</main>
 			) : (
 				<NoConnection />
 			)}
