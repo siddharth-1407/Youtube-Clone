@@ -197,7 +197,7 @@ const VideoDetails = () => {
 		<div className=' flex h-full min-h-[calc(100vh-56px)] w-full justify-between md:px-6 md:pt-6 '>
 			{isOnline ? (
 				<div className='wrapper | mx-auto flex w-full min-w-full max-w-[109.625rem] flex-col justify-between gap-6 min-[1060px]:min-w-[640px]  min-[1060px]:flex-row xl:px-6'>
-					<div className='flex w-full flex-1 flex-col gap-2'>
+					<main className='flex w-full flex-1 flex-col gap-2'>
 						<div className='player '>
 							<ReactPlayer
 								ref={playerRef}
@@ -264,7 +264,7 @@ const VideoDetails = () => {
 						<Suspense fallback={''}>
 							<CommentSection id={id} />
 						</Suspense>
-					</div>
+					</main>
 					<Suspense fallback={''}>
 						<RelatedVideos />
 					</Suspense>
