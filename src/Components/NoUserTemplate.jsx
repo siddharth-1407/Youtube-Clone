@@ -42,7 +42,7 @@ const NoUserTempate = ({ page }) => {
 	}, [user]);
 
 	return (
-		<div className='history w-full text-black dark:text-[#f1f1f1] flex justify-center pt-[10%]'>
+		<main className='history w-full text-black dark:text-[#f1f1f1] flex justify-center pt-[10%]'>
 			<div className='flex flex-col items-center gap-5'>
 				<div className='w-24 aspect-square'>{pageContent.icon}</div>
 				<h1 className='text-2xl text-center'>{pageContent.heading}</h1>
@@ -61,7 +61,7 @@ const NoUserTempate = ({ page }) => {
 					<p className='text-[#FF0000] font-medium animate-[blink_1.5s_linear_infinite] text-center'>This feature is not available yet!</p>
 				)}
 			</div>
-		</div>
+		</main>
 	);
 };
 
