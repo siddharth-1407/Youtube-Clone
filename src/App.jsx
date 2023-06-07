@@ -127,7 +127,7 @@ function App() {
 									exact
 									path='/results/query/:searchQuery/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<SearchResults />
 										</Suspense>
 									}
@@ -136,7 +136,7 @@ function App() {
 									exact
 									path='/video/:id/'
 									element={
-										<Suspense fallback={''}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<VideoDetails />
 										</Suspense>
 									}
@@ -145,7 +145,7 @@ function App() {
 									exact
 									path='/playlist/:id/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<PlaylistDetails />
 										</Suspense>
 									}
@@ -154,7 +154,7 @@ function App() {
 									exact
 									path='/channels/:id/*'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<ChannelDetailsWrapper />
 											<Routes>
 												<Route path='/' element={''} />
@@ -171,7 +171,7 @@ function App() {
 									exact
 									path='/history/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<History />
 										</Suspense>
 									}
@@ -180,7 +180,7 @@ function App() {
 									exact
 									path='/watchlater/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<WatchLater />
 										</Suspense>
 									}
@@ -189,7 +189,7 @@ function App() {
 									exact
 									path='/likedvideos/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<LikedVideos />
 										</Suspense>
 									}
@@ -198,7 +198,7 @@ function App() {
 									exact
 									path='/subscriptions/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<Subscriptions />
 										</Suspense>
 									}
@@ -207,7 +207,7 @@ function App() {
 									exact
 									path='/library/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<Library />
 										</Suspense>
 									}
@@ -289,7 +289,7 @@ function App() {
 									exact
 									path='/rateLimited/'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<LimitExceded />
 										</Suspense>
 									}
@@ -298,7 +298,7 @@ function App() {
 									exact
 									path='*'
 									element={
-										<Suspense fallback={<div></div>}>
+										<Suspense fallback={<div className='h-screen bg-white dark:bg-[#0f0f0f]'></div>}>
 											<NotFound />
 										</Suspense>
 									}
