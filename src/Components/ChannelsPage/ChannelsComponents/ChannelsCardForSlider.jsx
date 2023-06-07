@@ -22,7 +22,7 @@ const ChannelsCardForSlider = ({ id }) => {
 		<div className='videoCard | w-[10rem]  sm:max-w-[19.688rem] md:w-[13.125rem] lg:w-[16.438rem] xl:w-[14.75rem] 2xl:w-[13.125rem]'>
 			<div className='flex flex-col w-[13.125rem]'>
 				<div className={`channelImage | w-full flex justify-center  `}>
-					<Link to={`/channels/${id}`}>
+					<Link to={`/channels/${channelData?.snippet?.id}`}>
 						<div className='w-[6.438rem] aspect-square overflow-hidden rounded-full'>
 							<img
 								loading='lazy'
@@ -33,7 +33,7 @@ const ChannelsCardForSlider = ({ id }) => {
 					</Link>
 				</div>
 				<div className='flex flex-col gap-1 mt-1 text-center '>
-					<Link to={`/channels/${id}`}>
+					<Link to={`/channels/${channelData?.snippet?.id}`}>
 						<h4 className='font-medium text-sm text-[#0f0f0f] dark:text-[#f1f1f1]'>{channelData?.snippet?.title}</h4>
 					</Link>
 					<p className='text-[0.75rem] text-[#606060] dark:text-[#aaa]'>
