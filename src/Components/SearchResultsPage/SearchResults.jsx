@@ -118,7 +118,7 @@ const SearchResults = () => {
 							searchResults?.length > 0 ? (
 								searchResults.map((item, index) => {
 									return (
-										<div className='w-full ' key={index} ref={index === searchResults.length - 1 ? lastItem : null}>
+										<main className='w-full ' key={index} ref={index === searchResults.length - 1 ? lastItem : null}>
 											<Suspense
 												fallback={
 													item.id.kind === 'youtube#channel' ? (
@@ -133,7 +133,7 @@ const SearchResults = () => {
 												}>
 												<SearchResultsCard video={item} />
 											</Suspense>
-										</div>
+										</main>
 									);
 								})
 							) : (
