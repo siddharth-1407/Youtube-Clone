@@ -32,9 +32,10 @@ import { Context } from './context/ContextApi';
 import Overlay from './Components/Overlay';
 
 function App() {
-	const { getLocation, rateLimited, setIsOnline } = useContext(Context);
+	const { getLocation, rateLimited, setIsOnline, user } = useContext(Context);
 	const [showAlert, setShowAlert] = useState(null);
 
+	useEffect(()=>{},[user])
 	useEffect(() => {
 		if (navigator.onLine) {
 			setIsOnline(true);
