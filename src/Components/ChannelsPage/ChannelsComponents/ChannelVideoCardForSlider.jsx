@@ -88,7 +88,7 @@ const ChannelVideoCardForSlider = ({ video }) => {
 							</Link>
 							<div className='button | h-fit '>
 								<button
-									className=' js_EventBtn | opacity-0 group-hover:opacity-100 absolute top-[-18%] right-[-4%] w-[35.7px] h-[35.7px] rounded-full flex items-center justify-center  border-transparent  active:bg-[rgba(227,227,227,0.7)] dark:active:bg-[rgba(39,39,39,0.7)] border-[1px]'
+									className=' js_EventBtn | sm:opacity-0 group-hover:opacity-100 absolute top-[-18%] right-[-4%] w-[35.7px] h-[35.7px] rounded-full flex items-center justify-center  border-transparent  active:bg-[rgba(227,227,227,0.7)] dark:active:bg-[rgba(39,39,39,0.7)] border-[1px]'
 									onMouseUp={mouseUpAction}
 									onMouseDown={mouseDownAction}>
 									<MoreVertIcon className='text-black dark:text-white  pointer-events-none' />
