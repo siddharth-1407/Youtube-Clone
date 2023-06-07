@@ -30,7 +30,7 @@ const SharePopup = ({ shareRef, setOpen, open, video, playlist }) => {
 							className='px-2 py-2 w-full  hover:bg-[#e5e5e5] hover:dark:bg-[#535353]'
 							onClick={() => {
 								toast.success('Video Link copied');
-								navigator.clipboard.writeText(window.location.href.split('/', 3).join('/') + id);
+								navigator.clipboard.writeText('Youtube-Clone/#/' + window.location.href.split('/', 3).join('/') + id);
 								setOpen(false);
 							}}>
 							<span>{video !== undefined ? 'Copy video link' : 'Copy playlist link'}</span>
