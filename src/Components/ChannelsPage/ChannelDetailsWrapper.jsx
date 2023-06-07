@@ -21,7 +21,7 @@ const ChannelDetailsWrapper = () => {
 	}, []);
 	useEffect(() => {
 		fetchChannelData();
-	}, []);
+	}, [id]);
 
 	const fetchChannelData = async () => {
 		setProgress(80);
