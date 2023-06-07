@@ -32,7 +32,6 @@ const ChannelDetailsWrapper = () => {
 					import.meta.env.VITE_APP_YOUTUBE_API_KEY
 				}`
 			);
-			console.log(res);
 			// document Title
 			document.title = `${res?.items[0]?.snippet?.title} - YouTube Clone`;
 			setLoading(false);
@@ -41,7 +40,15 @@ const ChannelDetailsWrapper = () => {
 			// Resetting meta tags
 			ResetMetaTags();
 		} catch (error) {
-			console.log('Error', error);
+			if (error.response.status === 403) {
+				console.log('ERROR-> Forbidden :  Api Limit most likely!');
+			} else if (error.response.status === 400) {
+				console.log('ERROR-> OperationNotSupported : Check parameters!');
+			} else if (error.response.status === 404) {
+				console.log('ERROR-> CommentNotFound, maybe check the id!');
+			} else {
+				console.log('Error-> ', error);
+			}
 			setLoading(false);
 			setRateLimited(true);
 		}
