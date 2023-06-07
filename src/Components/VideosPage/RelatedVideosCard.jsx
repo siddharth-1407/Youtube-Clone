@@ -78,7 +78,7 @@ const RelatedVideosCard = ({ video }) => {
 						</Link>
 						<div className=' w-[26px] h-[26px] relative' ref={shareBtnRef}>
 							<button
-								className=' js_EventBtn | group-hover:opacity-100 opacity-0 w-full rounded-full flex items-center justify-center  border-transparent  active:bg-[#e3e3e3] dark:active:bg-[#272727] border-[1px] '
+								className=' js_EventBtn | group-hover:opacity-100 sm:opacity-0 w-full rounded-full flex items-center justify-center  border-transparent  active:bg-[#e3e3e3] dark:active:bg-[#272727] border-[1px] '
 								onClick={() => setOpen(!open)}
 								onMouseUp={mouseUpAction}
 								onMouseDown={mouseDownAction}>
