@@ -167,7 +167,7 @@ const VideoCard = ({ video }) => {
 							</Link>
 							<div className='button | h-fit relative' ref={shareBtnRef}>
 								<button
-									className={`js_EventBtn | opacity-0 absolute w-[39.7px] h-[39.7px] rounded-full flex items-center justify-center   border-transparent  active:bg-[#e3e3e3] dark:active:bg-[#272727] group-hover/player:opacity-100 border-[1px] ${
+									className={`js_EventBtn | sm:opacity-0 absolute w-[39.7px] h-[39.7px] rounded-full flex items-center justify-center border-transparent active:bg-[#e3e3e3] dark:active:bg-[#272727] group-hover/player:opacity-100 border-[1px] ${
 										open && 'opacity-100'
 									}`}
 									onMouseUp={mouseUpAction}
