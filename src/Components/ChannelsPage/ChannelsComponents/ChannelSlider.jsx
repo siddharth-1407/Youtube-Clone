@@ -50,7 +50,7 @@ const ChannelSlider = () => {
 	};
 
 	return (
-		<div className=' w-[calc(100vw-3rem)] mx-auto sm:px-12 sm:w-full md:px-0  md:w-[40rem] lg:w-[50rem] xl:px-0 2xl:px-0 xl:min-w-[60rem]  min-w-[1450]:min-w-[65rem] 2xl:min-w-[80.25rem] py-6 flex flex-col gap-6'>
+		<div className=` w-[calc(100vw-3rem)] mx-auto sm:px-12 sm:w-full md:px-0  md:w-[40rem] lg:w-[50rem] xl:px-0 2xl:px-0 xl:min-w-[60rem]  min-w-[1450]:min-w-[65rem] 2xl:min-w-[80.25rem] py-6 flex-col gap-6 ${otherChannels?.length > 0 ? 'flex' : 'hidden'}`>
 			<h3 className='playlistTitle | font-medium'>{otherChannels?.snippet?.title}</h3>
 			<div className='relative'>
 				<button
