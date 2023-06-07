@@ -74,7 +74,7 @@ const RelatedVideos = () => {
 	);
 
 	return (
-		<div className='relatedVideos | h-fit my-4 lg:mb-4 lg:m-0 px-3 sm:px-0 flex flex-col gap-2 min-w-full min-[1060px]:min-w-[19.75rem] min-[1060px]:max-w-[25.125rem]  '>
+		<section className='relatedVideos | h-fit my-4 lg:mb-4 lg:m-0 px-3 sm:px-0 flex flex-col gap-2 min-w-full min-[1060px]:min-w-[19.75rem] min-[1060px]:max-w-[25.125rem]  '>
 			{!loading && relatedVideos.length > 0
 				? relatedVideos.map((item, index) => {
 						return (
@@ -93,7 +93,7 @@ const RelatedVideos = () => {
 					<div className='loader'></div>
 				</div>
 			)}
-		</div>
+		</section>
 	);
 };
 
