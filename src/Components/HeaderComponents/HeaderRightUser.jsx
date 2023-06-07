@@ -71,7 +71,7 @@ const HeaderRightUser = () => {
 					className={`dropdown box-shadow-custom | absolute top-[50px] right-0 w-[300px]  bg-white dark:bg-[#282828] rounded-[12px] py-2 text-[#0f0f0f] dark:text-[#f1f1f1] text-sm ${
 						open ? 'flex' : 'hidden'
 					}`}>
-					<div className='accounts'></div>
+					
 					<ul className=' w-full '>
 						<li className='py-2 px-4 flex hover:bg-[#e5e5e5] hover:dark:bg-[#535353]'>
 							<button className='w-full  flex items-center gap-4' onClick={LogUserOut}>
