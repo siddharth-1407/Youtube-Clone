@@ -10,13 +10,14 @@ const SkeletonTypeVideo = lazy(() => import('../Skeletons/SkeletonTypeVideo'));
 
 const SearchResults = () => {
 	const observer = useRef(null);
-	const { setProgress, loading, setLoading, rateLimited, sidebarExpanded } = useContext(Context);
+	const { setProgress, loading, setLoading, rateLimited, sidebarExpanded, setSidebarExpanded } = useContext(Context);
 	const [searchResults, setSearchResults] = useState([]);
 	const [nextPageToken, setNextPageToken] = useState(null);
 	let { searchQuery } = useParams();
 
 	const array = ['', '', '', '', '', '', '', '', '', '', '', '', ''];
 	useEffect(() => {
+		setSidebarExpanded(true);
 		setLoading(true);
 		ResetMetaTags();
 	}, []);
