@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const SharePopup = ({ shareRef, setOpen, open, video, playlist }) => {
 	const { theme } = useContext(Context);
-	const id = video ? `/video/${video}` : `/playlist/${playlist}`;
+	const id = video ? `/Youtube-Clone/#/video/${video}` : `/Youtube-Clone/#/playlist/${playlist}`;
 	const youtubeLink = video ? ` https://youtu.be/${video}` : `https://youtube.com/playlist?list=${playlist}`;
 	useEffect(() => {
 		let handler = (e) => {
