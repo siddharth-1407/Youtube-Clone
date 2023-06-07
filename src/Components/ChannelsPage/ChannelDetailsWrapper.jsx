@@ -20,6 +20,7 @@ const ChannelDetailsWrapper = () => {
 		}
 	}, []);
 	useEffect(() => {
+		console.log(id)
 		fetchChannelData();
 	}, [id]);
 
