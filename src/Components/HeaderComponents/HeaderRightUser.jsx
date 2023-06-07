@@ -73,11 +73,6 @@ const HeaderRightUser = () => {
 					}`}>
 					<div className='accounts'></div>
 					<ul className=' w-full '>
-// 						<li className='py-2 px-4  flex hover:bg-[#e5e5e5] hover:dark:bg-[#535353]'>
-// 							<a href='' className='w-full flex items-center gap-4'>
-// 								<UserIcon className='fill-[#0f0f0f] dark:fill-white w-6' /> <span>Your Channel</span>
-// 							</a>
-// 						</li>
 						<li className='py-2 px-4 flex hover:bg-[#e5e5e5] hover:dark:bg-[#535353]'>
 							<button className='w-full  flex items-center gap-4' onClick={LogUserOut}>
 								<Logout className='fill-[#0f0f0f] dark:fill-white w-6 pointer-events-none' /> <span>Sign out</span>
